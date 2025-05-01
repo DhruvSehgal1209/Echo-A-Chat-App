@@ -9,6 +9,10 @@ const StartPage = () => {
     window.location.href = "https://string-chat.vercel.app/";
   };
 
+  const handleAIChat = () => {
+    window.location.href = "#";
+  };
+
   const handleOneOnOneChat = () => {
     navigate("/home");
   };
@@ -43,6 +47,13 @@ const StartPage = () => {
             className="btn btn-success text-white text-lg px-8 py-2.5 rounded-xl shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl flex justify-center items-center"
           >
             👥 Normal Chat
+          </button>
+
+          <button
+            onClick={handleAIChat}
+            className="btn btn-info text-white text-lg px-8 py-2.5 rounded-xl shadow-lg transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl flex justify-center items-center"
+          >
+            🤖 AI Chat
           </button>
         </div>
       </div>
